@@ -5,6 +5,7 @@
     "ionic": "driftyco/ionic-bower#1.0.0-rc.0"
   },
   "dependencies": {
+  	"ionic": "driftyco/ionic-bower#1.0.0-rc.0",
     "polymer": "Polymer/polymer#~0.5.5",
     "webcomponentsjs": "Polymer/webcomponentsjs#~0.5.5",
     "core-elements": "Polymer/core-elements#~0.5.5",
