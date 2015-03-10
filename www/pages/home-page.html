@@ -16,14 +16,19 @@
       </template>
    </div>
 
-     <paper-fab icon="add"></paper-fab>
+     <paper-fab icon="add" on-tap="{{addEntry}}"></paper-fab>
      
   </template>
   <script>
   		Polymer({
-    		ready: function() {},
+    		ready: function() {
+    			router = document.querySelector('app-router');
+    		},
     		responseChanged: function(){
     			console.log(JSON.stringify(this.response));
+    		},
+    		addEntry: function(){
+    			router.go('/post');
     		}
     	});
   </script>
