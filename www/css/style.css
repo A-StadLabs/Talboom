@@ -1,1 +1,15 @@
 /* Empty. Add your own CSS if you like */
+
+body {
+	/* I'm not your frond!!*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+[drawer] {
+  background-color: #fff;
+}
+
+.contentbox {
+	margin: 8px;
+	background-color: white;
+}

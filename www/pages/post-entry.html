@@ -1,0 +1,38 @@
+<link rel="import" href="/lib/polymer/polymer.html">
+<link rel="import" href="/lib/core-ajax/core-ajax.html">
+<link rel="import" href="/lib/core-icon-button/core-icon-button.html">
+
+<polymer-element name="post-entry">
+  	<template>
+  		<link rel="stylesheet" href="../css/style.css">
+
+		<core-ajax method="POST" on-core-response="{{response}}" id="entryPost" handleAs="json" data url="https://labs-002.firebaseio.com/.json"></core-ajax>
+
+  		<div class="contentbox">
+       		<input class="inputfield" placeholder="Titel" required stretch value="{{titel}}"></input><br />
+    		<input class="inputfield" placeholder="Beschrijving" required value="{{descr}}"></input><br />
+    		<core-icon-button icon="add">Feature toevoegen</core-icon-button><br />
+    		<button on-tap="{{submit}}">Verzenden</button>
+    	</div>
+	</template>
+  	<script>
+  		Polymer({
+    		ready: function() {
+        		this.titel = '';
+        		this.descr = '';
+    		},
+
+    		response: function(){
+    			console.log('Ok de post is gebeurd!');
+    		},
+
+    		submit: function(){
+          		var that = this;
+          		this.body = { 'title': this.titel, 'descr': this.descr };
+          		this.body = JSON.stringify(this.body);
+          		that.$.entryPost.body = this.body;
+          		that.$.entryPost.go();
+        	}
+    	});
+  </script>
+</polymer-element>
