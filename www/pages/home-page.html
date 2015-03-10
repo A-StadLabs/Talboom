@@ -8,6 +8,11 @@
 <div class="contentbox">
       <h2>Routing with Web Components!</h2>
       <p>Hello world!</p>
+      <template repeat="{{ i in response }}">
+      	<h2>{{i.titel}}</h2>
+      	<p>{{i.descr}}</p>
+      	<hr />
+      </template>
      </div>
   </template>
   <script>
