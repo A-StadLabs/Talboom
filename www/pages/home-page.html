@@ -1,11 +1,21 @@
 <link rel="import" href="/lib/polymer/polymer.html">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="import" href="/lib/ba-data/ba-data.html">
 
-<polymer-element name="home-page" noscript>
+<polymer-element name="home-page">
   <template>
-
+<link rel="stylesheet" href="../css/style.css">
+<ba-data response="{{response}}"></ba-data>
+<div class="contentbox">
       <h2>Routing with Web Components!</h2>
       <p>Hello world!</p>
-
+     </div>
   </template>
+  <script>
+  		Polymer({
+    		ready: function() {},
+    		responseChanged: function(){
+    			console.log(JSON.stringify(this.response));
+    		}
+    	});
+  </script>
 </polymer-element>

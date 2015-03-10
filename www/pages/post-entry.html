@@ -9,7 +9,7 @@
 		<core-ajax method="POST" on-core-response="{{response}}" id="entryPost" handleAs="json" data url="https://labs-002.firebaseio.com/.json"></core-ajax>
 
   		<div class="contentbox">
-       		<input class="inputfield" placeholder="Titel" required stretch value="{{titel}}"></input><br />
+       	<input class="inputfield" placeholder="Titel" required stretch value="{{titel}}"></input><br />
     		<input class="inputfield" placeholder="Beschrijving" required value="{{descr}}"></input><br />
     		<core-icon-button icon="add">Feature toevoegen</core-icon-button><br />
     		<button on-tap="{{submit}}">Verzenden</button>
