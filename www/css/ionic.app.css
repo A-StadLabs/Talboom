@@ -32,12 +32,12 @@ core-toolbar {
   background-color: #F93838; }
 
 .canvas {
-  width: 100vw;
+  width: 100%;
   background-color: white; }
 
 .container {
   width: 80%;
-  background-color: #333333; }
+  background-color: #F5F5F5; }
 
 .contentbox {
   box-sizing: border-box;
