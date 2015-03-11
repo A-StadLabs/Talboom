@@ -5,6 +5,7 @@
 <polymer-element name="home-page">
   <template>
 <link rel="stylesheet" href="../css/style.css">
+
 <ba-data response="{{response}}"></ba-data>
 
       <template repeat="{{ i in response }}">
@@ -13,7 +14,6 @@
       	<p>{{i.descr}}</p>
   	   </div>
       </template>
-
 
      <paper-fab icon="add" on-tap="{{addEntry}}"></paper-fab>
      
