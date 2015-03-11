@@ -16,8 +16,135 @@ $dark:                            #444 !default;
 */
 
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
+// $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+// @import "www/lib/ionic/scss/ionic";
 
+
+
+
+
+
+
+
+
+// Google Fonts
+// @import url("//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700");
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+// All margins to 0
+@import 'reset';
+
+
+//Variables FONTS
+$mainfont: 'Open Sans', sans-serif;
+$font_fat: 800; 
+$font_light: 100;
+$font_uppers: uppercase;
+
+$XXLarge: 32px;
+$XLarge: 24px;
+$Large: 14px;
+$Medium: 11px;
+$small: 8px;
+
+//Variables COLOURS
+
+$green: #38F93E;
+$red: #F93838;
+$blue: #007CC9;
+
+$grey1: #F5F5F5;
+$grey2: #EBEBEB;
+$grey3: #cccccc;
+$grey4: #999999;
+$grey5: #666666;
+$grey6: #333333;
+
+
+
+body {
+ 	font-family: $mainfont;
+ 	min-height: 1000px;
+ 	background-color: white;
+ 	font-size: $Medium;
+
+}
+
+
+[drawer] {
+	background-color: $green;
+}
+
+
+core-toolbar {
+	background-color: $red;
+}
+
+.canvas {
+	width: 100vw;
+	background-color: white;
+
+}
+
+.container {
+	width: 80%;
+		background-color: $grey6;
+
+}
+
+
+.contentbox {
+
+	  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+
+	border: 1px solid $grey3;
+	// border-radius: 5px;
+	min-width: 320px;
+	height: 200px;	
+	padding: 20px;
+}
+
+
+
+
+h2 {
+	// font-family: $mainfont;
+	font-weight: $font_light;
+	text-transform: $font_uppers;
+	font-size: $XXLarge;
+
+}
+
+
+
+
+.inputfield {
+	font-family: $mainfont;
+	font-size: $Medium;
+	background-color: white;
+	border: 1px solid $grey3;
+	padding: 10px 10px 10px 14px;
+	border-radius: 0px;
+	outline: 0;
+	border-style:solid;
+	-webkit-appearance: none;
+	width: 80%;
+	margin-bottom: 10px;
+	max-width: 600px;
+
+}
+
+
+.inputfield:focus {
+	border: 2px solid $red;
+}
+
+
+.biginput {
+	height: 200px;
+	resize: none;
+}

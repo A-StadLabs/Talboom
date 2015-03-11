@@ -1,0 +1,75 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+html, body, ul, li, h2, p, a, ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 1000px;
+  background-color: white;
+  font-size: 11px; }
+
+[drawer] {
+  background-color: #38F93E; }
+
+core-toolbar {
+  background-color: #F93838; }
+
+.canvas {
+  width: 100vw;
+  background-color: white; }
+
+.container {
+  width: 80%;
+  background-color: #333333; }
+
+.contentbox {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #cccccc;
+  min-width: 320px;
+  height: 200px;
+  padding: 20px; }
+
+h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 32px; }
+
+.inputfield {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 10px 10px 10px 14px;
+  border-radius: 0px;
+  outline: 0;
+  border-style: solid;
+  -webkit-appearance: none;
+  width: 80%;
+  margin-bottom: 10px;
+  max-width: 600px; }
+
+.inputfield:focus {
+  border: 2px solid #F93838; }
+
+.biginput {
+  height: 200px;
+  resize: none; }

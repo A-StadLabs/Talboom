@@ -1,11 +1,8 @@
-/* Empty. Add your own CSS if you like */
 
-body {
-	/* I'm not your frond!!*/
-  	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-	background-color: white;
-}
-/*
+$mainfont: "Open Sans", "Helvetica", "Arial", sans-serif;
+$maincolor: red;
+
+
 [drawer] {
   background-color: #fff;
 }
@@ -44,6 +41,3 @@ body {
 .biginput {
 	height: 200px;
 	    resize: none;
-
-
-}*/

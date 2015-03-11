@@ -4,19 +4,27 @@
 
 <polymer-element name="home-page">
   <template>
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/ionic.app.css">
 <ba-data response="{{response}}"></ba-data>
 
-      <template repeat="{{ i in response }}">
-      <div class="contentbox">
+<div vertical layout center class="canvas">
+<div horizontal layout wrap center start-justified class="container">
+    
+    <div vertical layout center class="contentbox">
+      <button on-tap="{{addEntry}}">hier klikken mag</button>
+    </div>
+    
+    <template repeat="{{ i in response }}">
+
+      <div vertical layout center center-justified class="contentbox">
       	<h2>{{i.titel}}</h2>
       	<p>{{i.descr}}</p>
   	   </div>
       </template>
+</div>
+</div>
 
-
-     <paper-fab icon="add" on-tap="{{addEntry}}"></paper-fab>
-     
+  
   </template>
   <script>
   		Polymer({
