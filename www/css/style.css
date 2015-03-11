@@ -3,6 +3,7 @@
 body {
 	/* I'm not your frond!!*/
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #f0f0f0;
 }
 
 [drawer] {
@@ -11,5 +12,6 @@ body {
 
 .contentbox {
 	margin: 8px;
+	padding: 8px;
 	background-color: white;
 }

@@ -8,13 +8,11 @@
 <script>
 	Polymer({
 
-
 		publish: {
     		response: {
     			reflect: true,
     			value: true
     		},
-    		
     	},
 
 		convertTimestamp: function(timestamp) {
@@ -27,8 +25,6 @@
 			var seconds = "0" + date.getSeconds();
 			return formattedTime = year + '-' + (month+1) + '-'+ day + ' ' + (hours-1) + ':' + minutes.substr(minutes.length-2) + ':' + seconds.substr(seconds.length-2);
 		},
-
-		
 
 		datachange: function(){
 			var messages = [];
@@ -43,7 +39,6 @@
 	          //console.log(messages);
 	      };
 	      this.response = messages;
-
 	  }
 	});
 </script>

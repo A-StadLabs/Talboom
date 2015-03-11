@@ -6,15 +6,14 @@
   <template>
 <link rel="stylesheet" href="../css/style.css">
 <ba-data response="{{response}}"></ba-data>
-<div class="contentbox">
-      <h2>Routing with Web Components!</h2>
-      <p>Hello world!</p>
+
       <template repeat="{{ i in response }}">
+      <div class="contentbox">
       	<h2>{{i.titel}}</h2>
       	<p>{{i.descr}}</p>
-      	<hr />
+  	   </div>
       </template>
-   </div>
+
 
      <paper-fab icon="add" on-tap="{{addEntry}}"></paper-fab>
      
@@ -25,7 +24,7 @@
     			router = document.querySelector('app-router');
     		},
     		responseChanged: function(){
-    			console.log(JSON.stringify(this.response));
+    			//console.log(JSON.stringify(this.response));
     		},
     		addEntry: function(){
     			router.go('/post');

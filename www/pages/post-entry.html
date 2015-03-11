@@ -1,6 +1,7 @@
 <link rel="import" href="/lib/polymer/polymer.html">
 <link rel="import" href="/lib/core-ajax/core-ajax.html">
 <link rel="import" href="/lib/core-icon-button/core-icon-button.html">
+<link rel="import" href="/lib/paper-fab/paper-fab.html">
 
 <polymer-element name="post-entry">
   	<template>
@@ -14,12 +15,14 @@
     		<core-icon-button icon="add">Feature toevoegen</core-icon-button><br />
     		<button on-tap="{{submit}}">Verzenden</button>
     	</div>
+      <paper-fab icon="arrow-back" on-tap="{{backHome}}"></paper-fab>
 	</template>
   	<script>
   		Polymer({
     		ready: function() {
         		this.titel = '';
         		this.descr = '';
+            router = document.querySelector('app-router');
     		},
 
     		response: function(){
@@ -32,7 +35,11 @@
           		this.body = JSON.stringify(this.body);
           		that.$.entryPost.body = this.body;
           		that.$.entryPost.go();
-        	}
+        },
+
+        backHome: function(){
+          router.go('/');
+        }
     	});
   </script>
 </polymer-element>
